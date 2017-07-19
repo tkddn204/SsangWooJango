@@ -22,10 +22,16 @@ tests/report/
 env
 
 # Pycharm
-.idea
-
-# environment
-environment.ini
+.idea/
 
 # db
 db.sqlite3
+
+# local_settings
+local_settings.py
+
+# root static folder
+/static/
+
+# migrations folder
+migrations/

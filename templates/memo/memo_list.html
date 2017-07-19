@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>메모</title>
+</head>
+<body>
+    <div id="content">
+        <h1> 메모 리스트 </h1>
+        <hr/>
+        {% if object_list is None %}
+            <ul>
+                {% for memo in object_list %}
+                    <li>
+                        <a href="{% url 'memo:memo_detail' memo.id %}"> {{ memo }} </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <b>작성된 메모가 없습니다!</b>
+        {% endif %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    {% for post in posts %}
+        <div class="post">
+            <h1><a href="{% url 'blog:post_detail' pk=post.pk %}">
+                {{ post.title }}
+            </a></h1>
+            <p>{{ post.text|linebreaksbr }}</p>
+            <div class="date">
+                published : {{ post.published_date }}
+            </div>
+            <a href="{% url 'blog:post_detail' pk=post.pk %}">
+                댓글 : {{ post.approved_comments.count }}개</a>
+        </div>
+    {% endfor %}
+{% endblock content %}
