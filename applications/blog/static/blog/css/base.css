@@ -12,12 +12,12 @@
     text-decoration: none;
 }
 
-.content {
-    margin-left: 40px;
+body, table, div, p {
+    font-family: 'Noto Sans KR', serif;
 }
 
-h1, h2, h3, h4 {
-    font-family: 'Noto Sans KR', serif;
+.content {
+    margin-left: 40px;
 }
 
 .date {

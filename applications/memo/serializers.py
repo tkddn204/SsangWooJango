@@ -1,5 +1,6 @@
 from rest_framework import serializers
-from memo.models import Bbs
+
+from applications.memo.models import Bbs
 
 
 class BbsSerializer(serializers.ModelSerializer):

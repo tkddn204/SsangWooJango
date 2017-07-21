@@ -1,10 +1,9 @@
 from django.http import HttpResponse
 from django.views.generic import ListView, DetailView
-
+from applications.memo.serializers import BbsSerializer
 from rest_framework import generics
 
-from memo.models import Memo, Bbs
-from memo.serializers import BbsSerializer
+from applications.memo.models import Memo, Bbs
 
 
 # 메인 페이지

@@ -1,5 +1,6 @@
 from django.contrib import admin
-from memo.models import Memo, Bbs
+
+from applications.memo.models import Memo, Bbs
 
 
 class MemoAdmin(admin.ModelAdmin):
